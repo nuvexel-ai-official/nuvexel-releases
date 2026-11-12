@@ -1,6 +1,6 @@
 <div align="center">
 
-# Nuvexel AI Pro 1.0
+# Nuvexel AI Pro 1.0.1
 
 **Offline AI cut-out, HD upscaling and clean vector for Windows 10 / 11**
 
@@ -65,12 +65,12 @@ processor · no graphics card needed.
 
 ### Check the file (optional)
 
-Compare the SHA-256 of the file you downloaded with these values (PowerShell: `Get-FileHash <file>`):
+Compare the SHA-256 of the file you downloaded with these values for version 1.0.1 (PowerShell: `Get-FileHash <file>`):
 
 | File | SHA-256 |
 |---|---|
-| `Nuvexel_AI_Pro_v1.0_Setup.exe` | `db42c4a5f04ed6bb35c76d5b0661c4228ceb4f0ed4b512892f7f5c684ca63b20` |
-| `Nuvexel_AI_Pro_v1.0_Portable.zip` | `41d15037b46844dd59731390a337184727221b47baed11830ed77eb9015919ab` |
+| `Nuvexel_AI_Pro_v1.0_Setup.exe` | `65fd7673ca5f13901772ec6414c378e02cbd77cca23305fec91709207527ad98` |
+| `Nuvexel_AI_Pro_v1.0_Portable.zip` | `ac3765eb8df940fa3a0bab5cedac98b23f98884498d8ea4da5724e228c10030f` |
 
 ### The blue "Windows protected your PC" window
 
@@ -283,6 +283,13 @@ The pass has ended (30 days from activation). Enter a new key, or contact suppor
 
 **On how many computers can I use one key?**
 Up to 3 of your own PCs.
+
+**I lost my license key.**
+Search your e-mail for "NV3" or "Payhip", or write to [support@nuvexelai.com](mailto:support@nuvexelai.com) from the
+e-mail address you used to buy. In the program, the key window has the same hint under **Lost your key?**.
+
+**The program says "This is Payhip's 5-letter product code, not your key".**
+Payhip shows a short Product Key next to your license key. Paste the long key from the e-mail: it starts with NV3.
 
 **Will photos of shiny metal look the same in pure SVG?**
 In pure SVG, reflections become a gradient and 2–3 tones, because that is how vector graphics work. To keep every
