@@ -1,6 +1,6 @@
 <div align="center">
 
-# Nuvexel AI Pro 1.0.1
+# Nuvexel AI Pro 1.0.2
 
 **Offline AI cut-out, HD upscaling and clean vector for Windows 10 / 11**
 
@@ -65,12 +65,12 @@ processor · no graphics card needed.
 
 ### Check the file (optional)
 
-Compare the SHA-256 of the file you downloaded with these values for version 1.0.1 (PowerShell: `Get-FileHash <file>`):
+Compare the SHA-256 of the file you downloaded with these values for version 1.0.2 (PowerShell: `Get-FileHash <file>`):
 
 | File | SHA-256 |
 |---|---|
-| `Nuvexel_AI_Pro_v1.0_Setup.exe` | `65fd7673ca5f13901772ec6414c378e02cbd77cca23305fec91709207527ad98` |
-| `Nuvexel_AI_Pro_v1.0_Portable.zip` | `ac3765eb8df940fa3a0bab5cedac98b23f98884498d8ea4da5724e228c10030f` |
+| `Nuvexel_AI_Pro_v1.0_Setup.exe` | `c78c090b5ce2af721266c922683d9c58b4efc45fdd0f2810e12acf41973ab8b6` |
+| `Nuvexel_AI_Pro_v1.0_Portable.zip` | `fa30d26b9da46245c054716d7c9830e16a94284bed03d35c4a2239cd343ae79a` |
 
 ### The blue "Windows protected your PC" window
 
@@ -212,20 +212,20 @@ automatically; the analysis button explains what it found and restores the autom
 | **Text on the object** | Places a chosen inscription onto the details of the current image. |
 | **Edit tools** | **Bézier nodes (A):** drag nodes and handles, Alt+click switches corner / smooth, Del deletes. **Detail (V):** select and move a part. **Fill (G)** with a colour or transparency, **Eyedropper (I)**, **Cut part** with a line, **Brush (B)** and **Eraser (E)** for pixels, **Add by click** for a missed letter or detail. |
 | **Sticker border (Die-Cut)** | An even border around the silhouette for printed die-cut stickers, Telegram stickers and UI icons; in SVG it is a separate path under the artwork. |
-| **Details: ZIP / Download all layers** | An SVG with every part on its own layer, plus a ZIP with a separate SVG and PNG of each part (and a sprite atlas for a sheet). |
+| **Details: ZIP / Download all layers** | An SVG with every part on its own layer, plus a ZIP: every part as a PNG with its real texture, `layers.json` with the position of each PNG, and an outline SVG; every detail also as its own PNG and SVG. The parts put together give the picture back. |
 
 ### ⑤ Save: every format
 
 | Control | What it does |
 |---|---|
 | **Compare / Side by side** | Before / after curtain, or the original and the result side by side. |
-| **What to download: Picture / Details / All** | The whole picture; only the parts and layers (each as PNG + SVG in a ZIP); or both. |
+| **What to download: Picture / Details / All** | The whole picture; only the parts and layers (the ZIP described under ④); or both. |
 | **Main download button** | Follows the result type: Hybrid → PNG, Vector → SVG, Layers → ZIP. The standard Windows "Save As" window opens with the file name filled in. |
 | **Copy** | Copies a PNG to the clipboard (Figma, Photoshop, messengers). |
 | **Other formats** | WEBP, PDF (vector document for print), EPS (print vector), JPG (solid background), ICO (Windows icon 16–256 px), ZIP (a bundle you choose: PNG, SVG, parts folder, PDF, EPS, WEBP, JPG, ICO, DXF, game sprite, normal map). |
-| **Laser / CNC (.dxf)** | DXF R12 + laser SVG: closed contours, red cut and blue engrave layers, size in millimetres, optional holding bridges that join loose parts (the dot of an "i", separate letters) to the body, and halftone. |
-| **Unity / Godot (.png)** | Sprite PNG + 2D collider (low-vertex polygon with holes) + Unity `.meta` and Godot `.tscn`, pivot and pixels-per-unit. |
-| **Normal map** | Normal map, 16-bit height map and a lit preview for 2D lighting. |
+| **Laser / CNC (.dxf)** | DXF R2000 (default) or R12 + laser SVG: closed contours, size in millimetres. The red CUT layer follows the exact outline of the object and every through hole; the blue ENGRAVE layer holds the lines inside it. **Plate around the drawing** cuts one plate around the whole drawing and engraves the drawing. Optional holding bridges join loose parts (the dot of an "i", separate letters) to the body; halftone. Holes under 0.02 mm², cut pieces under 0.25 mm² and engraving under 0.02 mm² are left out and counted in `name_laser.json`; through holes of only a few pixels are not cut. We have not opened the DXF files in a CAD or laser program ourselves; if yours does not accept R2000, choose R12. |
+| **Unity / Godot (.png)** | Sprite PNG + 2D collider (low-vertex polygon with holes; every hole stays open in Godot too) + Unity `.meta` and Godot `.tscn`, pivot and pixels-per-unit. An existing `.meta` keeps its guid; a new guid comes from the export folder name and the file name. |
+| **Normal map** | Normal map, 16-bit height map and a lit preview for 2D lighting, the same size as the exported sprite. |
 | **GIF animation** | A before / after curtain GIF (24 frames, 680 px) for portfolios and posts. |
 | **Size, background and folder…** | The export window (Ctrl+S): exact size (0.5× … 4×, or W × H), background (transparent, white, custom colour) and destination folder. |
 | **Compare 4 variants** | Crisp hybrid · Clean vector (SVG) · Light SVG · Stamp / Laser side by side with synced zoom; click the best one to use it. |
@@ -332,5 +332,5 @@ but send only pictures you have the right to share.
   others) and the AI models (ISNet / DIS and MobileSAM under Apache-2.0, Real-ESRGAN under BSD-3-Clause) are listed
   with their licenses in `THIRD_PARTY_NOTICES.txt` inside the program folder.
 
-© 2026 Nuvexel AI Pro · Operated by NIKOSART (Exempt Dealer No. 209531680, Israel).
+© 2026 Nuvexel AI (Exempt Dealer, Israel) · support@nuvexelai.com.
 This repository hosts the release files and the user guide; the program itself is closed source.
